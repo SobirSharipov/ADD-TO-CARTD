@@ -1,0 +1,38 @@
+{
+    "data":[
+        {
+            
+    "name": "Smart Watch X22 PRO",
+     "scidca":"20%",
+    "age": "26$",
+    "status": true,
+    "img": "https://storage.alifshop.tj/media/images/alifshop/2352/umnye-chasy-smart-watch-x22-pro-s-remeshkom-oyster-44-mm-chernyy-1638356217500-lg.webp",
+    "id": "1"
+  },
+  {
+    "name": "DT NO.1 3 Max Ultra",
+     "scidca":"20%",
+    "age": "39$",
+    "status": false,
+    "img": "https://storage.alifshop.tj/media/images/alifshop/9910/umnye-chasy-dt-no-1-3-max-ultra-replika-1668067170717-lg.webp",
+    "id": "2"
+  },
+  {
+    "name": " Sony PlayStation 5 Slim, 1000 GB",
+    "scidca":"20%",
+    "age": "579$",
+    "status": false,
+    "img": "https://storage.alifshop.tj/media/images/alifshop/19142/igrovaya-pristavka-sony-playstation-5-1000-gb-1699959901419-lg.webp",
+    "id": "3"
+  },
+  {
+    "name": "Sony PlayStation 5 ",
+     "scidca":"20%",
+    "age": "650$",
+    "status": false,
+    "img": "https://storage.alifshop.tj/media/images/alifshop/20022/igrovaya-pristavka-sony-playstation-5-marvel-s-spider-man-2-limited-edition-825-gb-1703671356807-lg.webp",
+    "id": "4"
+  
+        }
+    ]
+}
