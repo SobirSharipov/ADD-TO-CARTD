@@ -101,7 +101,7 @@ span{
     width: 600px;
     height: 30px;
     border-radius: 5px;
-    
+    border: 2px solid blue;
     padding: 5px;
 }
 .btncart{
@@ -179,6 +179,15 @@ select{
     border-radius: 5px;
     padding: 8px;  
     width: 100px; 
+}
+
+.Sort{
+    background-color: blue;
+    border: none;
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 @media (max-width: 510px) {
