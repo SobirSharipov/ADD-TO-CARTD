@@ -15,12 +15,54 @@
    
 }
 .cart{
-    width: 190px;
+    width: 150px;
     padding: 10px;
     border-radius: 8px;
     background-color: rgb(0, 128, 0);
     color: white;
     border: none;
+}
+.Infodialog{
+    border-radius: 10px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+.info{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-left: 10px;
+}
+.info:hover{
+    background-color:blue;
+}
+.InfoScid{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+.InfoAge{
+    /* background-color: blue; */
+    font-size: 30px;
+    font-weight: 900;
+    /* color: white; */
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+.InfoClose{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
 }
 
 .img{
@@ -47,7 +89,7 @@ span{
     padding: 10px;
     border-radius: 8px;
     border: none;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 .header{
     display: flex;
@@ -74,7 +116,7 @@ span{
     color: white;
     border-radius: 5px;
     padding: 10px;
-    width: 180px;
+    width: 150px;
 }
 
 .btnX{

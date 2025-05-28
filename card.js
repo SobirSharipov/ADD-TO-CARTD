@@ -7,6 +7,13 @@ let Editimg = document.querySelector(".Editimg");
 let Editselect = document.querySelector(".Editselect");
 let EditSave = document.querySelector(".EditSave");
 let Search = document.querySelector(".Search");
+let Infodialog = document.querySelector(".Infodialog");
+let Infoimg = document.querySelector(".Infoimg");
+let InfoName = document.querySelector(".InfoName");
+let InfoAge = document.querySelector(".InfoAge");
+let InfoScid = document.querySelector(".InfoScid");
+let InfoStatus = document.querySelector(".InfoStatus");
+let InfoClose = document.querySelector(".InfoClose");
 let idx=null
 
 let product = JSON.parse(localStorage.getItem("data")) || [];
@@ -66,13 +73,32 @@ function CartAdd(data) {
       Editselect.value = el.status ? "Active" : "Inactive";
       idx = el.id;
     };
-    div.append(img, h1,pSpan, h3, pStatus, btnDelet,btnEdit);
+
+      let btnInfo = document.createElement("button");
+      btnInfo.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+</svg>
+`
+    btnInfo.classList.add("info");
+    btnInfo.onclick = () => {
+      Infodialog.showModal();
+      Infoimg.src = el.img;
+      InfoName.innerHTML = el.name;
+      InfoAge.innerHTML = el.age;
+      InfoScid.innerHTML = el.scidca;
+      
+    };
+
+
+    div.append(img, h1,pSpan, h3, pStatus, btnDelet,btnEdit,btnInfo);
     box.append(div);
   });
 }
 CartAdd(product);
 
-
+InfoClose.onclick = () => {
+  Infodialog.close();
+}
 
 EditSave.onclick = () => {
   let newUser = {
