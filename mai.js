@@ -16,7 +16,28 @@ let InfoScid = document.querySelector(".InfoScid");
 let InfoStatus = document.querySelector(".InfoStatus");
 let InfoClose = document.querySelector(".InfoClose");
 let Sort = document.querySelector(".Sort");
+
+
+let body = document.querySelector(".body");
+let black = document.querySelector(".black");
+let white = document.querySelector(".white");
 let idx=null
+
+let darcMode = localStorage.getItem("darcMode") || "white";
+body.style.backgroundColor = darcMode;
+black.onclick = () => { 
+  localStorage.setItem("darcMode","black")
+  let darcMode=localStorage.getItem("darcMode")
+  body.style.backgroundColor=darcMode
+  body.style.color="white"
+}
+
+white.onclick=()=>{
+  localStorage.setItem("darcMode","white")
+  let darcMode=localStorage.getItem("darcMode")
+  body.style.backgroundColor=darcMode
+  body.style.color="black"
+}
 
 
 Sort.onclick = () => {
